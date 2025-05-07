@@ -15,9 +15,9 @@ const router = Router();
 // Ruta genérica para tipo de películas
 router.get("/:tipo", consultaPeliculas); 
 router.get("/:tipo/:pelicula", consulta_individual);
-router.post("/:tipo/insercion",authMiddleware, insercion);
+router.post("/:tipo/insercion",authMiddleware,verificarAdmin,insercion);
 router.delete("/:tipo/eliminar/:id",authMiddleware, verificarAdmin ,eliminar);
-router.put("/:tipo/actualizar/:id",authMiddleware, actualizar);
+router.put("/:tipo/actualizar/:id",authMiddleware,verificarAdmin, actualizar);
 router.post("/registro",registro_usuario);
 router.post("/login",iniciar_sesion);
 

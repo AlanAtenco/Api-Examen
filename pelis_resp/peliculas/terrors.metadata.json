@@ -1,0 +1,1 @@
+{"indexes":[{"v":{"$numberInt":"2"},"key":{"_id":{"$numberInt":"1"}},"name":"_id_"}],"uuid":"5590c64290494eea94d45f2c6b4ca6a4","collectionName":"terrors","type":"collection"}
